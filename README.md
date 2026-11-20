@@ -1,4 +1,3 @@
-
 # Group G152 — MP223
 
 ## Problem: Wheat Yield per Acre (Guwahati)
@@ -36,4 +35,3 @@ An end-to-end MLOps pipeline for predicting wheat yield per acre (`yield_qtl_per
 1. Clone the repository and install dependencies: `pip install -r requirements.txt`
 2. Place the original `train.csv` and `later.csv` inside `data/raw/` (do **not** edit/save them in Excel, and do **not** force-add them to Git).
 3. Import `clean_train_data()` from `src/mp223/data.py` to load the cleaned training dataset.
-EOF
