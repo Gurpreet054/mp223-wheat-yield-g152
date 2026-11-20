@@ -1,4 +1,4 @@
-cat << 'EOF' > README.md
+
 # Group G152 — MP223
 
 ## Problem: Wheat Yield per Acre (Guwahati)
