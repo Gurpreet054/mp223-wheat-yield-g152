@@ -1,0 +1,53 @@
+group_id: G152
+problem_id: MP223
+data_issues:
+  leaking_column:
+    present: true
+    column: yield_from_mandi_receipt
+  unit_mixup:
+    present: true
+    column: fertilizer_kg
+    group_value: Tehsil West
+    factor: 1000
+  sentinel_value:
+    present: true
+    column: soil_ph
+    value: -999
+    count: 64
+  duplicate_rows:
+    present: false
+    count: null
+  stuck_sensor:
+    present: true
+    column: irrigation_count
+    start_date: '2026-05-10'
+    end_date: '2026-05-31'
+  target_typos:
+    present: true
+    count: 10
+  spelling_variants:
+    present: false
+    column: null
+    true_levels: null
+tracking:
+  experiment_name: mp223-wheat-yield
+  best_run_id: 2969e78998c24d599225867c15b5271a
+  registered_model_name: mp223-wheat-yield-model
+  champion_version: 4
+monitoring:
+  psi:
+    rainfall_mm: 5.422391
+    fertilizer_kg: 0.052
+    sowing_delay_days: 0.061097
+    irrigation_count: 0.122298
+    soil_ph: 0.065899
+    farm_acres: 0.029027
+  most_drifted_feature: rainfall_mm
+  mae_by_group:
+    Tehsil North: 7.2603
+    Tehsil South: 1.1864
+    Tehsil West: 1.299
+  worst_served_group: Tehsil North
+  mae_v1_on_check: 3.2336
+  mae_v2_on_check: 1.4919
+  decision: promote
