@@ -8,7 +8,7 @@ def main():
     model = mlflow.sklearn.load_model(f'models:/{MODEL}@champion')
     holdout = pd.read_csv(ROOT / 'data/raw/holdout_features.csv')
     result = pd.DataFrame({'record_id': holdout['record_id'], TARGET: model.predict(holdout[FEATURES])})
-    output = ROOT / 'reports/holdout_predictions.csv'
+    output = ROOT / 'predictions/holdout_predictions.csv'
     output.parent.mkdir(exist_ok=True)
     result.to_csv(output, index=False)
     print(f'Saved {len(result)} predictions to {output}')

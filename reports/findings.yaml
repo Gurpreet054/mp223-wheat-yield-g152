@@ -31,9 +31,9 @@ data_issues:
     true_levels: null
 tracking:
   experiment_name: mp223-wheat-yield
-  best_run_id: 2969e78998c24d599225867c15b5271a
+  best_run_id: cb8484187b974ded847cd1b999956336
   registered_model_name: mp223-wheat-yield-model
-  champion_version: 4
+  champion_version: 2
 monitoring:
   psi:
     rainfall_mm: 5.422391

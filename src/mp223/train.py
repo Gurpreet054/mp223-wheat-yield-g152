@@ -1,3 +1,4 @@
+import hashlib
 from pathlib import Path
 import pandas as pd
 import mlflow
@@ -46,6 +47,7 @@ def main():
             pred = pipe.predict(val[FEATURES])
             mae = mean_absolute_error(val[TARGET], pred)
             mlflow.log_params({'model_type': name, 'validation_cutoff': str(cutoff), **estimator.get_params()})
+            mlflow.log_param('data_sha256', hashlib.sha256((ROOT / 'data/raw/train.csv').read_bytes()).hexdigest())
             mlflow.log_metrics({'mae': mae, 'rmse': root_mean_squared_error(val[TARGET], pred), 'r2': r2_score(val[TARGET], pred)})
             info = mlflow.sklearn.log_model(pipe, name='model', input_example=train[FEATURES].head(3))
             print(name, 'MAE:', mae)
