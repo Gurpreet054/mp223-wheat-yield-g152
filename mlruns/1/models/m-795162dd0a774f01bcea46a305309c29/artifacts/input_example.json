@@ -1,0 +1,1 @@
+{"columns": ["rainfall_mm", "fertilizer_kg", "sowing_delay_days", "irrigation_count", "soil_ph", "farm_acres", "seed_variety", "tehsil"], "data": [[795, 120.8, 14, 4, 7.6, 8.66, "HD-2967", "Tehsil West"], [278, 36.6, 29, 7, 6.99, 5.99, "PBW-343", "Tehsil West"], [820, 115.3, 27, 6, 5.58, 8.49, "HD-2967", "Tehsil West"]]}
