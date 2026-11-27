@@ -9,6 +9,6 @@ uvicorn==0.34.0
 pydantic==2.10.4
 pytest==8.3.4
 httpx==0.28.1
-dvc==3.58.0pathspec==0.12.1
-sqlalchemy==2.0.36
+dvc==3.58.0
+pathspec==0.12.1
 sqlalchemy==2.0.36
